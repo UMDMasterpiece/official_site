@@ -16,7 +16,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Custom Gems---------------------------------------------------------------------------
 gem "minitest-rails"
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'slide-down-alerts-rails'
+gem 'will_paginate', '~> 3.1'
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

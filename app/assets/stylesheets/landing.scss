@@ -13,9 +13,14 @@
 .caption {
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 70%;
   width: 100%;
   text-align: center;
+  color: #000;
+}
+
+.caption:hover {
+  opacity: 0.9;
   color: #000;
 }
 
@@ -23,6 +28,64 @@
   background-color: white;
   color: #111;
   padding: 18px;
-  letter-spacing: 8px;
+  letter-spacing: 2px;
+}
+
+a {
+  color: black;
 }
 //-------------------------------------------------------------------------------------------------------------
+
+section {
+  padding: 0 20px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.label-eboard {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.label-about {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  letter-spacing: 2px;
+}
+
+label:hover {
+  color: #000;
+}
+
+.blog {
+  width: 100%;
+  background: url("still.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  margin: 0;
+  padding: 50px 80px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.blog-div:hover {
+  opacity: 0.7;
+  color: #000;
+}
+
+.about {
+  height: 500px;
+}

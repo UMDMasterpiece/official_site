@@ -1,3 +1,28 @@
-// Place all the styles related to the landing controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Header and navbar-------------------------------------------------------------------------------------------
+.group-pic {
+  width: 100%;
+  background: url("group.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+  height: 750px;
+  margin: 0;
+  padding: 200px 0;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.border {
+  background-color: white;
+  color: #111;
+  padding: 18px;
+  letter-spacing: 8px;
+}
+//-------------------------------------------------------------------------------------------------------------

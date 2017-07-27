@@ -20,6 +20,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'slide-down-alerts-rails'
 gem 'will_paginate', '~> 3.1'
+gem 'mail_form', '~> 1.7'
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

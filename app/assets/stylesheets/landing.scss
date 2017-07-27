@@ -1,7 +1,7 @@
 // Header and navbar-------------------------------------------------------------------------------------------
 .group-pic {
   width: 100%;
-  background: url("group.jpg") 50% 0 no-repeat fixed;
+  background: image-url("group.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   color: #fff;
   height: 750px;
@@ -71,7 +71,7 @@ label:hover {
 
 .blog {
   width: 100%;
-  background: url("still.jpg") 50% 0 no-repeat fixed;
+  background: image-url("still.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   color: #fff;
   height: 400px;

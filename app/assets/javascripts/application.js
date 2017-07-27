@@ -16,4 +16,5 @@
 //= require helpers
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require swf_fu
 //= require_tree .

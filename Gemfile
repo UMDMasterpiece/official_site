@@ -21,6 +21,7 @@ gem 'font-awesome-sass', '~> 4.7.0'
 gem 'slide-down-alerts-rails'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.7'
+gem "swf_fu", "~> 2.0"
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

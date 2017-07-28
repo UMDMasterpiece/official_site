@@ -17,9 +17,17 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Blog</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Create A Post!</a>
-      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'New Post', new_blog_post_path %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'My Account', edit_user_registration_path %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>

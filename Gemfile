@@ -22,6 +22,8 @@ gem 'slide-down-alerts-rails'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.7'
 gem "swf_fu", "~> 2.0"
+gem 'devise', '~> 4.3'
+gem 'simple_form'
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

@@ -15,6 +15,7 @@
 //= require jquery.bar.custom
 //= require helpers
 //= require bootstrap-sprockets
+//= require bootsy
 //= require turbolinks
 //= require swf_fu
 //= require_tree .

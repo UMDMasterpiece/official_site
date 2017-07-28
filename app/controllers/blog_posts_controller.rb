@@ -1,5 +1,7 @@
 class BlogPostsController < ApplicationController
-  before_action :find_post, only: [:edit, :update, :show, :delete]
+  include Bootsy::Container
+
+  before_action :find_blog_post, only: [:edit, :update, :show, :delete]
 
   # Index action to render all posts
   def index
@@ -51,7 +53,7 @@ class BlogPostsController < ApplicationController
   private
 
   def blog_post_params
-    params.require(:blog_post).permit(:title, :body)
+    params.require(:blog_post).permit(:title, :body, :bootsy_image_gallery_id)
   end
 
   def find_post 

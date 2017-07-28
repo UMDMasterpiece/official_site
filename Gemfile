@@ -24,6 +24,7 @@ gem 'mail_form', '~> 1.7'
 gem "swf_fu", "~> 2.0"
 gem 'devise', '~> 4.3'
 gem 'simple_form'
+gem 'bootsy'
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

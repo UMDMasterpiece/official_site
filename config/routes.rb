@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :contacts, only: [:new, :create]
-  resources :blog_posts
+  resources :posts
 
   root 'landing#index'
 end

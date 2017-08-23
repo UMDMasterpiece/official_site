@@ -1,3 +1,8 @@
+/*  
+*= require owl.carousel
+*= require owl.theme
+*/
+
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -7,6 +12,7 @@
 @import "jbar.colors";
 @import "jbar";
 
+
 // Pages
 @import "landing";
 @import "posts";
@@ -14,5 +20,9 @@
 @import "modules/buttons";
 @import "modules/navbar";
 @import "modules/footer";
+@import "modules/carousel";
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 

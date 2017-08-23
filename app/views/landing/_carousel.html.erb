@@ -1,0 +1,95 @@
+<h2 class="mast-title">UMD MasTERPiece</h2>
+
+<div id="carousel">
+  
+  <div class="hideLeft">
+    <%= image_tag("line.jpg") %>
+  </div>
+
+  <div class="prevLeftSecond">
+    <%= image_tag("hug.jpg") %>
+  </div>
+
+  <div class="prev">
+    <%= image_tag("laugh.jpg") %>
+  </div>
+
+  <div class="selected">
+    <%= image_tag("group.jpg") %>
+  </div>
+
+  <div class="next">
+    <%= image_tag("oa.jpg") %>  
+  </div>
+
+  <div class="nextRightSecond">
+    <%= image_tag("wall.jpg") %>
+  </div>
+
+  <div class="hideRight">
+    <%= image_tag("smilemall.jpg") %>
+  </div>
+
+</div>
+
+<div class="buttons">
+  <button id="prev" class="btn btn-default"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </button>
+  <button id="next" class="btn btn-default"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </button>  
+</div>
+
+<script>
+
+  function moveToSelected( element ) {
+    if ( element == "next" ) {
+      var selected = $( ".selected" ).next();
+    } else if ( element == "prev" ) {
+      var selected = $( ".selected" ).prev();
+    } else {
+      var selected = element;
+    }
+
+    var next = $( selected ).next();
+    var prev = $( selected ).prev();
+    var prevSecond = $( prev ).prev();
+    var nextSecond = $( next ).next();
+
+    $( selected ).removeClass().addClass( "selected" );
+
+    $( prev ).removeClass().addClass( "prev" );
+    $( next ).removeClass().addClass( "next" );
+
+    $( nextSecond ).removeClass().addClass( "nextRightSecond" );
+    $( prevSecond ).removeClass().addClass( "prevLeftSecond" );
+
+    $( nextSecond ).nextAll().removeClass().addClass( 'hideRight' );
+    $( prevSecond ).prevAll().removeClass().addClass( 'hideLeft' );
+  }
+
+  $( document ).keydown( function( e ) {
+    switch( e.switch ) {
+      case 37: 
+        moveToSelected( 'prev' );
+        break;   
+      case 39:
+        moveToSelected( 'next' );
+        break;
+      default: return;
+    }
+    e.preventDefault();
+  });
+
+  $( '#carousel div' ).click( function() {
+    moveToSelected( $( this ) );
+  });
+
+  $( '#prev' ).click( function() {
+    moveToSelected( 'prev' );
+  });
+
+  $( '#next' ).click( function() {
+    moveToSelected( 'next' );
+  });
+
+</script>

@@ -15,10 +15,11 @@ class PostsController < ApplicationController
   
     # Saves the post into database
     def create
-      @post = Post.new 
-      if @post.save(post_params)
+      @post = Post.new (post_params)
+      @post.user = current_user
+      if @post.save
         flash.now[:notice] = "Successfully created post!"
-        redirect_to  post_path(@post)
+        redirect_to post_path(@post)
       else
         flash.now[:alert] = "Error creating new post!"
         render :new

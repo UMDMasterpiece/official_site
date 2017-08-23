@@ -15,9 +15,10 @@
             <li><a href="#" class="hvrcenter">About</a></li>
 		        <li><%= link_to 'Blog', posts_path, class: 'hvrcenter' %></li>
             <li><%= link_to 'Contact Us', new_contact_path, class: 'hvrcenter' %></li>
-            <% if user_signed_in? %>
-            <li class="nav-item">
-              <%= link_to 'New Post', new_blog_post_path %>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Log In", new_user_session_path %></li>            
+             <li class="nav-item">
+              <%= link_to 'New Post', new_post_path %>
             </li>
             <li class="nav-item">
               <%= link_to 'My Account', edit_user_registration_path %>
@@ -25,45 +26,9 @@
             <li class="nav-item">
               <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
             </li>
-          <% end %>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
 	</header>
 </div>
-<!---
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav navbar-left">
-      <li class="button-left left-side"><%= link_to image_tag("logo.png", size: 40, class: 'logo'), root_path %></li>
-      <li class="button-left left-side"><%= link_to "UMD MasTERPiece", root_path, class: "navbar-brand" %></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Gallery</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Blog</a>
-      </li>
-      <% if user_signed_in? %>
-        <li class="nav-item">
-          <%= link_to 'New Post', new_blog_post_path %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'My Account', edit_user_registration_path %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-</nav>
--->

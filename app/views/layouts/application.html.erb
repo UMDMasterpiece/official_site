@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <script id="dsq-count-scr" src="//umdmasterpiece.disqus.com/count.js" async></script>
 
     <%= slide_down_alerts %>
     
@@ -19,7 +20,9 @@
 
     <%= yield %>
 
-    <%= render 'layouts/footer' %>
+    <footer>
+      <%= render 'layouts/footer' %>
+    </footer>
 
   </body>
 </html>

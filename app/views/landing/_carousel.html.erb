@@ -1,6 +1,44 @@
 <h2 class="mast-title">UMD MasTERPiece</h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag("line.jpg", class: 'first-slide') %>
+    </div>
+    <div class="item">
+      <%= image_tag("hug.jpg", class: 'second-slide') %>
+    </div>
+    <div class="item">
+      <%= image_tag("laugh.jpg", class: 'third-slide') %>
+    </div>
+    <div class="item">
+      <%= image_tag("group.jpg", class: 'fourth-slide') %>
+    </div>
+    <div class="item">
+      <%= image_tag("oa.jpg", class: 'fifth-slide') %>
+    </div>
+    <div class="item">
+      <%= image_tag("wall.jpg", class: 'sixth-slide') %>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-<div id="carousel">
+<!--<div id="carousel">
   
   <div class="hideLeft">
     <%= image_tag("line.jpg") %>
@@ -92,4 +130,4 @@
     moveToSelected( 'next' );
   });
 
-</script>
+</script>-->

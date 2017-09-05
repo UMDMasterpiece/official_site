@@ -91,7 +91,7 @@ label:hover {
 }
 
 .about {
-  height: 800px;
+  height: 400px;
   text-align: center;
 }
 
@@ -241,8 +241,7 @@ label:hover {
   text-align: center;
 }
 .at-user__avatar {
-  width: 98px;
-  height: 98px;
+  width: 200px;
   border-radius: 100%;
   margin: 0 auto 20px;
   overflow: hidden;
@@ -303,4 +302,16 @@ body {
           transform-origin: top center;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+}
+
+.pic12 {
+  width: 100%;
+  background: image-url("grey.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+  height: 400px;
+  margin: 0;
+  padding: 50px 80px;
+  text-align: center;
+  font-size: 100px;
 }

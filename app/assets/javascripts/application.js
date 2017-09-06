@@ -18,5 +18,4 @@
 //= require bootsy
 //= require turbolinks
 //= require swf_fu
-//= require owl.carousel
 //= require_tree .

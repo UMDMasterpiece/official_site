@@ -25,7 +25,7 @@ gem "swf_fu", "~> 2.0"
 gem 'devise', '~> 4.3'
 gem 'simple_form'
 gem 'bootsy'
-gem 'owlcarousel-rails'
+gem 'will_paginate-bootstrap'
 #---------------------------------------------------------------------------------------
 
 group :development, :test do

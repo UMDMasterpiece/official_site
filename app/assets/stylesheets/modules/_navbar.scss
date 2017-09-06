@@ -1,8 +1,12 @@
 .logo {
   border-radius: 100%;
   border: 2px solid rgba(0,0,0,0.07);
-  margin-top: 8px;
+  margin-top: 2px;
   margin-bottom: 8px;
+}
+
+.navtext {
+  font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -55,4 +59,27 @@
 
 .navbar {
   margin-bottom: 0px;
+  height: 0;
+}
+
+.fa-bars {
+  font-size: 25px;
+  margin-top: 14px;
+  padding-left: 12px;
+  color: #F6D8D9;
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+  display: block;    
+}
+
+.mast-title-nav {
+  font-family: 'Permanent Marker', cursive;  
+  text-align: center;  
+  font-size: 40px;
+  color:#F6D8D9;
+}
+
+.drops {
+  margin-bottom: 20px;
 }

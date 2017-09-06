@@ -97,6 +97,7 @@ label:hover {
 
 .sec-about {
   padding: 0 150px 0 150px;
+  height: 1500px;
 }
 
 // Eboard section
@@ -117,7 +118,6 @@ label:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #FFF;
-  border: 1px solid #E2E9ED;
 }
 .at-grid[data-column="1"] .at-column {
   width: 100%;
@@ -187,7 +187,7 @@ label:hover {
   position: relative;
   background: #FFF;
   box-shadow: 0 0 0 1px #E2E9ED;
-  padding: 10px;
+  padding: 30px;
   box-sizing: border-box;
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
   transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;

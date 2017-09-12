@@ -19,3 +19,12 @@
 //= require turbolinks
 //= require swf_fu
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+  tinymce.remove();
+  tinymce.init({
+    selector:'textarea#post_body',
+    plugins: "image media link code",
+    toolbar: "undo redo | styleselect | bold italic link | image media "
+  });
+});

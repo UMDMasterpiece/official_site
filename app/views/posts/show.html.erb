@@ -1,18 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-1 col-lg-2"> 
-    </div>
-    <div class="col-md-10 col-lg-8 text-xs-center">
-      <h1><%= @post.title %></h1>
-      <% if user_signed_in? %>
-        <div>
-          <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-sm btn-warning'%>
-          <%= link_to 'Remove', post_path(@post), method: :delete,
-                  data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger'%>
+    <div class="">
+      <div class="content">
+        <h1 class="mast-title disqus"><%= @post.title %></h1>
+        <% if user_signed_in? %>
+          <div class="edit-btn">
+            <%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-sm btn-warning'%>
+            <%= link_to 'Remove', post_path(@post), method: :delete,
+                    data: {confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger'%>
+          </div>
+        <% end %>
+        <div class="disqus">
+          <%= @post.body.html_safe %>
         </div>
-      <% end %>
-      <%= @post.body.html_safe %>
+        <!-- Populate tags here -->
+        <div class="col-md-12 disqus">
+          <%= render "layouts/disqus" %>
+        </div>
+      </div>
     </div>
-    <%= render "layouts/disqus" %>
   </div>
 </div>

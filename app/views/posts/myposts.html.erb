@@ -1,0 +1,25 @@
+<h1 class="card-top-title">My Posts</h1>
+<div class="container">
+  <div class="row">
+    <section class="content">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="table-container">
+              <div id="new_listing_button">
+                <%= link_to 'New Post', new_post_path, class: "btn btn-info" %>
+              </div>
+              <table class="table table-filter">
+                <tr>
+                  <th class="mylistings-title" colspan="5">Title</th>
+                </tr>
+                <%= render 'posts/mypostsform' %>
+              </table>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

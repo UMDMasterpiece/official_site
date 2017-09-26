@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   
     # Index action to render all posts
     def index
-      @posts = Post.where(params[:id]).order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+      @posts = Post.where(params[:id]).order("created_at DESC").paginate(:page => params[:page], :per_page => 4)
     end
   
     # New action creates the posts
@@ -49,6 +49,10 @@ class PostsController < ApplicationController
       else 
         flash.now[:alert] = "Error updating post!"
       end 
+    end
+
+    def myposts
+      @post = Post.where(params[:title])
     end
   
     private

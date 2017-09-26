@@ -5,3 +5,16 @@
 .btn.btn-outline { 
   background-color: rgb(255, 230, 230); 
 }
+
+.btn-primary {
+  background-color:#F6D8D9;
+  border-color: #F6D8D9;
+  transition: transform 0.4s;
+  transform: scale(1);
+}
+
+.btn-primary:hover {
+  transform: scale(1.5);
+  background-color:#F6D8D9;
+  border-color: #F6D8D9;
+}

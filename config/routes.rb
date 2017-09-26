@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :posts
 
   root 'landing#index'
+
+  match '/myposts', to: 'posts#myposts', via: :get
 end

@@ -7,14 +7,21 @@
 }
 
 .btn-primary {
-  background-color:#F6D8D9;
-  border-color: #F6D8D9;
+  background-color:white;
+  border-color: #DBD9D9;
   transition: transform 0.4s;
   transform: scale(1);
 }
 
 .btn-primary:hover {
   transform: scale(1.5);
-  background-color:#F6D8D9;
-  border-color: #F6D8D9;
+  background-color:white;
+  border-color: #DBD9D9;
+}
+
+.latest-news-box .item .btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: black;
 }

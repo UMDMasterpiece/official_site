@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   root 'landing#index'
 
   match '/myposts', to: 'posts#myposts', via: :get
+  match '/calendar', to: 'landing#calendar', via: :get  
 end

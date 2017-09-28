@@ -25,9 +25,17 @@
     > li {
       display: inline-block;
       float: none;
+      
     > a {
       padding-left: 30px;
       padding-right: 30px;
+      font-size: 15px;
     }
   }
+}
+
+.navbar-nav .menu-items a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
 }

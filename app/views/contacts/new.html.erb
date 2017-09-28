@@ -1,48 +1,48 @@
 <h1 class="text-center mast-title">CONTACT US</h1>
-<div class="col-md-offset-3">
-  <div class="well well-sm">
-    <div class="form-horizontal">
-      <%= form_for @contact do |f| %>
-
-        <!-- Name -->
-        <div class="form-group">
-          <%= f.label :name, class: 'col-md-3 control-label' %>
-          <div class="col-md-9">
-            <%= f.text_field :name,  required: true, class: 'form-control' %>
+<br />
+<br />
+<div class="container">
+  <div class="row">
+    <%= form_for @contact do |f| %>
+    
+      <!-- Name -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.text_field :name,  required: true, class: 'form-control', id: 'Name', placeholder: 'Name' %>
           </div>
         </div>
-
         <!-- Email -->
-        <div class="form-group">
-          <%= f.label :email,  class: 'col-md-3 control-label' %>
-          <div class="col-md-9">
-            <%= f.email_field :email,  required: true, class: 'form-control' %>
+        <div class="col-md-6">
+          <div class="form-group">
+            <%= f.email_field :email,  required: true, class: 'form-control', id: 'email', placeholder: 'E-mail' %>
           </div>
         </div>
+      </div>
 
-        <!-- Message -->
-        <div class="form-group">
-          <%= f.label :message, class: 'col-md-3 control-label' %>
-          <div class="col-md-9">
-            <%= f.text_area :message, as: :text, class: 'form-control' %>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <%= f.text_area :message, as: :text, placeholder: 'Message', rows: '9', class: 'form-control textarea', id: 'Message' %>
           </div>
         </div>
+      </div>
 
-        <!-- Hidden -->
-        <div class="hidden form-group">
-          <%= f.label :nickname %>
-          <div class="col-md-9">
-            <%= f.text_field :nickname, hint: 'leave this field blank', class: 'form-control' %>
-          </div>
+      <!-- Submit button -->
+      <div class="row">
+        <div class="col-md-12">
+          <%= f.submit 'Send', class: 'btn main-btn pull-right' %>
         </div>
+      </div>
 
-        <!-- Submit button -->
-        <div class="form-group">
-          <div class="col-md-12 text-right">
-            <%= f.submit 'Send', class: 'btn btn-primary btn-md new_color' %>
-          </div>
+      <!-- Hidden -->
+      <div class="hidden form-group">
+        <%= f.label :nickname %>
+        <div class="col-md-9">
+          <%= f.text_field :nickname, hint: 'leave this field blank', class: 'form-control' %>
         </div>
-      <% end %>
-    </div>
+      </div>
+
+    <% end %>
   </div>
 </div>

@@ -1,3 +1,45 @@
 // Place all the styles related to the contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.contact-form { 
+  margin-top:15px;
+}
+
+.contact-form .textarea { 
+  min-height:220px; 
+  resize:none;
+}
+
+.form-control { 
+  box-shadow:none; 
+  border-color:#eee; 
+  height:49px;
+}
+
+.form-control:focus { 
+  box-shadow:none; 
+  border-color:black;
+}
+
+.form-control-feedback { 
+  line-height:50px;
+}
+
+.main-btn { 
+  background:#347AF1;
+  border-color:#347AF1; 
+  color:#fff;
+  transition: transform 0.4s;
+  transform: scale(1);
+}
+
+.main-btn:hover {
+  transform: scale(1.5);
+  background:#347AF1;
+  color:#fff;
+}
+
+.form-control-feedback {
+  line-height: 50px;
+  top: 0px;
+}

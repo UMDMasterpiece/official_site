@@ -45,12 +45,46 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-primary-collapse">
 				<ul class="nav navbar-nav">
-					<li class="menu-items active"><%= link_to 'Home', root_path %></li>
-					<li class="menu-items"><%= link_to 'Blog', posts_path, class: 'hvrcenter navtext' %></li>
-					<li><%= image_tag("Masterpiece_Logo_Full .png", width:"250", class: ' button-left left-side') %></li>
-					<li class="menu-items"><%= link_to 'Contact', new_contact_path, class: 'hvrcenter navtext' %></li>
-					<li class="menu-items"><%= link_to 'Calendar', calendar_path %></li>
+					<li class="menu-items active">
+						<%= link_to 'Home', root_path %>
+					</li>
+
+					<li class="menu-items">
+						<%= link_to 'Blog', posts_path, class: 'hvrcenter navtext' %>
+					</li>
+
+					<% if user_signed_in? %>
+						<li class="menu-items">
+							<%= link_to 'My Posts', myposts_path %>
+						</li>
+					<% end %>
+
+					<li>
+						<%= image_tag("Masterpiece_Logo_Full .png", width:"250", class: ' button-left left-side') %>
+					</li>
+
+					<% if user_signed_in? %>
+						<li class="menu-items">
+							<%= link_to 'New Post', new_post_path %>
+						</li>
+					<% end %>
+
+					<li class="menu-items">
+						<%= link_to 'Contact', new_contact_path, class: 'hvrcenter navtext' %>
+					</li>
+
+					<li class="menu-items">
+						<%= link_to 'Calendar', calendar_path %>
+					</li>
 				</ul>
+
+				<% if user_signed_in? %>
+					<ul class="log-nav">
+						<li class="menu-items">
+							<%= link_to 'Logout', destroy_user_session_path, :method => :delete %>
+						</li>	
+					</ul>
+				<% end %>
 			</div>
 		</div>
 	</nav>

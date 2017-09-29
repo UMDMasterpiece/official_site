@@ -39,3 +39,30 @@
   color: white;
   text-decoration: none;
 }
+
+#navbar-primary .log-nav { 
+  //  background: #ededed;
+    width: 100%;
+    > li {
+      display: inline-block;
+      float: none;
+      
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.log-nav {
+  list-style: none;
+}
+
+.log-nav .menu-items a:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}

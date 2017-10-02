@@ -319,3 +319,13 @@ body {
   font-size: 30px;
   font-family: 'Ubuntu', sans-serif;  
 }
+
+.fa-social {
+  font-size: 20px;
+  transition: transform 0.4s;
+  transform: scale(1);
+}
+
+.fa-social:hover {
+  transform: scale(1.5);
+}

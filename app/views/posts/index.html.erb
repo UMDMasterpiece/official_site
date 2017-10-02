@@ -1,3 +1,29 @@
 <div class="row">
-  <%= render 'post' %> 
+    <section>
+        <div class="latest-news-box">
+          <div class="row nomargin">
+              <% @posts.each do |post| %>
+              <div class="col-md-6 nopadding">
+                <div class="item item-left">
+                  <div class="col-md-6 nopadding hidden-xs">
+                    <img src="<%= post.banner_image_url %>" alt="">
+                    <span class="image-overflow"></span>
+                    <div class="arrow-left"></div>
+                  </div>
+                  <div class="col-md-6 nopadding">
+                    <div class="content">
+                      <h2><%= link_to post.title, post %></h2>
+                      <p><%= truncate(post.description, length: 130) %></p>
+                      <%= link_to 'See More...', post, class: 'btn btn-primary' %>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% end %>
+            </div>
+            <div class="paginate">
+              <%= will_paginate @posts, previous_label: "Newer", next_label: "Older", inner_window: 2, outer_window: 0, renderer: BootstrapPagination::Rails %>   
+            </div>
+        </div>
+      </section>
 </div>

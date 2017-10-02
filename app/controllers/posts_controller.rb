@@ -52,7 +52,7 @@ class PostsController < ApplicationController
     end
 
     def myposts
-      @post = Post.where(params[:title])
+      @post = Post.where(user: current_user)
     end
   
     private

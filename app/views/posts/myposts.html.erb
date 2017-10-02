@@ -1,4 +1,4 @@
-<h1 class="card-top-title">My Posts</h1>
+<h1 class="mast-title">My Posts</h1>
 <div class="container">
   <div class="row">
     <section class="content">
@@ -9,11 +9,12 @@
               <div id="new_listing_button">
                 <%= link_to 'New Post', new_post_path, class: "btn btn-info" %>
               </div>
+              <br />
               <table class="table table-filter">
                 <tr>
                   <th class="mylistings-title" colspan="5">Title</th>
                 </tr>
-                <%= render 'posts/mypostsform' %>
+                <%= render @post %>
               </table>
               <br />
             </div>

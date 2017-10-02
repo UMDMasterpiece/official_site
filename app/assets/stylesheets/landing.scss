@@ -91,13 +91,13 @@ label:hover {
 }
 
 .about {
-  height: 400px;
+  height: 350px;
   text-align: center;
 }
 
 .sec-about {
-  padding: 0 150px 0 150px;
-  height: 1500px;
+  //padding: 0 10px 0 10px;
+  height: 1350px;
 }
 
 // Eboard section
@@ -186,7 +186,6 @@ label:hover {
   z-index: 0;
   position: relative;
   background: #FFF;
-  box-shadow: 0 0 0 1px #E2E9ED;
   padding: 30px;
   box-sizing: border-box;
   -webkit-transition: box-shadow 0.2s ease, z-index 0s 0.2s ease, -webkit-transform 0.2s ease;
@@ -314,4 +313,9 @@ body {
   padding: 50px 80px;
   text-align: center;
   font-size: 100px;
+}
+
+.about-description {
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;  
 }

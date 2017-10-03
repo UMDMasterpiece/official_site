@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   
     # Saves the post into database
     def create
-      @post = Post.new (post_params)
+      @post = Post.new(post_params)
       @post.user = current_user
       if @post.save
         flash.now[:notice] = "Successfully created post!"

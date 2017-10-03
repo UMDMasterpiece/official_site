@@ -6,7 +6,7 @@
               <div class="col-md-6 nopadding">
                 <div class="item item-left">
                   <div class="col-md-6 nopadding hidden-xs">
-                    <img src="<%= post.banner_image_url %>" alt="">
+                    <%= image_tag post.image.url(:large) %>
                     <span class="image-overflow"></span>
                     <div class="arrow-left"></div>
                   </div>

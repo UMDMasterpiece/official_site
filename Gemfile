@@ -26,6 +26,7 @@ gem 'devise', '~> 4.3'
 gem 'simple_form'
 gem 'bootsy'
 gem 'will_paginate-bootstrap'
+gem "paperclip", "~> 5.0.0"
 #---------------------------------------------------------------------------------------
 
 group :development, :test do
